@@ -1,13 +1,17 @@
-<!-- ... (contenido previo del index.html) ... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (contenido del head) ... -->
+</head>
 <body>
     <div id="login-form">
         <input type="password" id="password" placeholder="Contraseña">
         <button onclick="authenticate()">Iniciar Sesión</button>
     </div>
     <div class="chat-box" id="chat-box" style="display: none;"></div>
-    <input type="text" id="message-input" placeholder="Escribe tu mensaje..." style="display: none;">
+    <input type="text" id="message-input" placeholder="Escribe tu mensaje..." onkeypress="sendMessage(event)" style="display: none;">
     <button onclick="sendMessage()" style="display: none;">Enviar</button>
 
     <script src="script.js"></script>
 </body>
-<!-- ... (contenido posterior del index.html) ... -->
+</html>
